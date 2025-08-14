@@ -1,0 +1,393 @@
+#about, #services, #blogs, #testimonials, #faqs {
+    padding: 5em 6vw;
+}
+
+#hero-section {
+    background: center / cover no-repeat url("../img/Background.webp");
+  }
+  
+  .hero-content {
+    text-align: center;
+    margin: 10em 0 6em;
+    color: white;
+  }
+  
+  .first-h1 {
+    letter-spacing: 0.5em;
+    margin: 0.4em 0em;
+    font-weight: 500;
+    text-decoration: overline solid var(--npc);
+  }
+  
+  .second-h1 {
+    letter-spacing: 0.28em;
+    margin: 0.2em 0em 0.8em;
+    font-weight: 500;
+    text-decoration: underline solid var(--npc);
+  }
+  
+  .hero-content h4{
+    margin: 0.4em 0em;
+    line-height: 1.2em;
+  }
+  
+  .hero-content button{
+    margin: 0.5em 1.5em;
+  }
+  
+  .profile-img {
+    border-radius: 0.5em;
+    margin: 1em 0 0em;
+    width: 80%;
+    max-width: 28em;
+  }
+  
+  .h3-title {
+    margin: 1em 0 0;
+    text-align: center;
+    text-decoration: overline solid var(--npc);
+    font-weight: 500;
+  }
+  
+  .h2-title {
+    text-align: center;
+    text-decoration: underline solid var(--npc);
+    font-weight: 500;
+    margin: 0.2em 0 1em;
+  }
+  
+  #about h3 {
+    letter-spacing: 0.1em;
+  }
+  
+  #about h2 {
+    letter-spacing: 0.4em;
+  }
+  
+  #about div {
+    border-radius: 0.5em;
+  }
+  
+  #about p {
+    margin-top: 2em;
+  }
+  
+  #services {
+    text-align: center;
+  }
+  
+  #services .row .col-md {
+    height: 22em;
+    width: auto;
+  }
+  
+  #services .row > .col-md {
+    background: center / cover no-repeat url("../img/OnlineTherapy 2.webp");
+  }
+  
+  #services .row :nth-child(2) {
+    background: center / cover no-repeat url("../img/Inperson Therapy.webp");
+  }
+  
+  #services h3 {
+    letter-spacing: 0.4em;
+  }
+  
+  #services h2 {
+    letter-spacing: 0.4em;
+  }
+  
+  #services h4 {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  #services p {
+    margin: 4em 0;
+  }
+  
+  /*.testimonial {
+    display: none;
+    opacity: 1;
+    margin: 1em;
+    height: fit-content;
+    max-width: 40em;
+    width: 92%;
+    padding: 2em;
+    color: black;
+    background: linear-gradient(180deg, rgba(161,168,132,1) 5%, rgba(239,205,118,1) 95%);
+    border-radius: 1em;
+  }
+  
+  #testimonials svg, ellipse, path{
+    margin: 0;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .client-img {
+    margin: auto;
+    height: 10em;
+    width: 10em;
+  }*/
+  
+  #blogs {
+    text-align: center;
+  }
+  
+  #blogs h2 {
+    letter-spacing: 0.7em;
+  }
+  
+  #blogs h3 {
+    letter-spacing: 0.2em;
+  }
+
+  .article-snippet {
+    width: 30em;
+    margin: 1em;
+    padding: 0 0.5em;
+    border: 1px solid var(--ntcl);
+    border-radius: 2em;
+  }
+  
+  .snippet-article-cover-img {
+    height: 20em;
+    width: 25em;
+    object-fit: cover;
+  }
+  
+  .snippet-article-title a {
+    font-size: 0.6em;
+    line-height: 0.2em;
+    color: var(--ntcd);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .snippet-article-title a:hover {
+    text-decoration: underline;
+    color: var(--nsc);
+  }
+  
+  /* .snippet-author-img {
+    border: 1px solid var(--ntcl);
+    border-radius: 50%;
+    height: 6em;
+    object-fit: cover;
+  }
+  
+  .snippet-article-author{
+  
+  } */
+  
+  .snippet-article-date {
+  
+  }
+  
+  .snippet-article-body {
+  
+  }
+  
+  #faqs {
+    color: white;
+    text-align: center;
+    background: center / cover no-repeat url("../img/FAQs.webp");
+  }
+  
+  #faqs h2 {
+    letter-spacing: 0.7em;
+  }
+  
+  #faqs h3 {
+    letter-spacing: 0.4em;
+  }
+  
+  .faqs-questions {
+    margin-top: 3em;
+    text-align: left;
+  }
+  
+  .faqs-answers {
+    color: var(--npc);
+    text-align: left;
+    display: none;
+  }
+
+
+@media (max-width: 576px) {
+
+    p {margin: 1rem;}
+  
+    h1, h2, h3, h4, h5 {
+      font-weight: 500;
+      margin: 0.4em 0;
+      line-height: 1em;
+      text-align: center;
+    }
+  
+    h1 {font-size: 1.802rem;}
+  
+    h2 {font-size: 1.602rem;}
+  
+    h3 {font-size: 1.424rem;}
+  
+    h4 {font-size: 1.266rem;}
+  
+    h5 {font-size: 1.125rem;}
+  
+    small, .text_small {font-size: 0.889rem;}
+  
+  }
+  
+  @media (min-width: 576px) {
+  
+    p {margin-bottom: 1rem;}
+  
+    h1, h2, h3, h4, h5 {
+      font-weight: 500;
+      margin: 0.4em 0;
+      line-height: 1em;
+    }
+  
+    h1 {font-size: 1.802rem;}
+  
+    h2 {font-size: 1.602rem;}
+  
+    h3 {font-size: 1.424rem;}
+  
+    h4 {font-size: 1.266rem;}
+  
+    h5 {font-size: 1.125rem;}
+  
+    small, .text_small {font-size: 0.889rem;}
+  
+    /*.flex-col {
+      display: block;
+    }
+  
+    .flex-row {
+      display: block;
+    }*/
+  
+  }
+  
+  @media (min-width: 768px) {
+  
+    p {margin-bottom: 1rem;}
+  
+    h1, h2, h3, h4, h5 {
+      font-weight: 500;
+      margin: 0.4em 0;
+      line-height: 1em;
+    }
+  
+    h1 {font-size: 2.488rem;}
+  
+    h2 {font-size: 2.074rem;}
+  
+    h3 {font-size: 1.728rem;}
+  
+    h4 {font-size: 1.44rem;}
+  
+    h5 {font-size: 1.2rem;}
+  
+    small, .text_small {font-size: 0.833rem;}
+  
+    .service-col{
+      display: block;
+      height: 30em;
+      width: 40em;  
+    }
+  
+    #about, #services, #blogs, #testimonials, #faqs {
+      padding: 5em 12vw;
+    }
+  
+    #hero-section, footer {
+      padding: 1em 12vw;
+    }
+  
+    .contact-menu {
+      height: 20em;
+      width: 3em;
+      position: fixed;
+      top: 25%;
+      right: 1em;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .faqs-answers {
+      display: block;
+    }
+  
+    .main-article-title {
+      top: 6em
+    }
+  
+  }
+  
+  @media (min-width: 992px) {
+  
+    p {margin:1rem 2rem;}
+  
+    h1, h2, h3, h4, h5 {
+      font-weight: 500;
+      margin: 0.4em 0;
+      line-height: 1em;
+    }
+  
+    h1 {font-size: 3.052rem;}
+  
+    h2 {font-size: 2.441rem;}
+  
+    h3 {font-size: 1.953rem;}
+  
+    h4 {font-size: 1.563rem;}
+  
+    h5 {font-size: 1.25rem;}
+  
+    small, .text_small {font-size: 0.8rem;}
+  
+    .nav-menu-icon {
+      display: none;
+    }
+  
+    #dropdown-nav {
+      display: none;
+    }
+  
+    #main-nav a {
+      display: flex;
+    }
+  
+  
+  
+  }
+  
+  @media (min-width: 1200px) {
+  
+    p {margin-bottom: 1rem;}
+  
+    h1, h2, h3, h4, h5 {
+      font-weight: 500;
+      margin: 0.4em 0;
+      line-height: 1em;
+    }
+  
+    h1 {font-size: 4.209rem;}
+  
+    h2 {font-size: 3.157rem;}
+  
+    h3 {font-size: 2.369rem;}
+  
+    h4 {font-size: 1.777rem;}
+  
+    h5 {font-size: 1.333rem;}
+  
+    small, .text_small {font-size: 0.75rem;}
+  
+  }

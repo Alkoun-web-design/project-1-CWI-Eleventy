@@ -1,0 +1,9 @@
+{
+    "layout": "article.njk",
+    "author": "Iqra Naz",
+    "profession":  "Clinial Pshychologist",
+    "authorImage": "/assets/img/Iqra-Naz-profile-min.webp",
+    "authorImageAlt": "Author's Image",
+    "coverImageAlt": "Article Cover Image",
+    "tags": "post"
+}

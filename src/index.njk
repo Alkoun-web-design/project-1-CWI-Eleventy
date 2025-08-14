@@ -1,0 +1,203 @@
+---
+
+title: Home | Counseling With Iqra Naz
+layout: 'base.njk'
+description: An experienced mental health counselor with extensive training at various mental health facilities 
+
+---
+
+		<section>
+		    <div id="hero-section">
+                <div class="hero-content">
+                    <h1 class="first-h1">COUNSELING</h1>
+                    <h1 class="second-h1">WITH IQRA NAZ</h1>
+                    <h4>Book your appointment today, and get<br>
+                        the first 15 minutes of consultation free.</h4>
+                    <form action="tel:+92301-8637274">
+                        <button type="submit">Contact Me</button>
+                    </form>
+                    <form action="/blog/">
+                        <button type="submit">Read My Blog</button>
+                    </form>
+                </div>
+            </div>
+		</section>
+
+        <section>
+            <div id="about" class="flex-row">
+                <div class="row">
+                    <h3 class="h3-title">MENTAL HEALTH COUNSELOR</h3>
+                    <h2 class="h2-title">IQRA NAZ</h2>
+                    <div class="col-md">
+                        <p>I am an experienced mental health counselor with extensive training at 
+                            various mental health facilities and over 2 years of experience working
+                            privately. My area of interests and expertise includes depression, 
+                            anxiety, interpersonal conflicts, grief/loss and issues related life 
+                            adjustment in various contexts.</p>
+                        <p>I believe that counseling/therapy is not limited to an individual 
+                            struggling with a serious mental health issue, rather, it is for any 
+                            individual who wants to explore his/herself. If one feels the need for 
+                            assistance to navigate through difficult emotions and equip themselves 
+                            with the tools to live a meaningful life then therapy is the best place 
+                            to achieve that. It is learning to exist in a way that allows us to 
+                            experience all human emotions in a balanced manner and foster personal growth.</p>
+                        <p>While my approach to counseling is primarily Cognitive Behavioral Therapy I
+                            do however use other therapuetic approaches as well, depending upon the 
+                            difficulties my clients are facing. I adopt a Narrative approach to 
+                            understand and explore how we construct our realities and how these 
+                            narratives about ourselves and the world around us influences behaviors 
+                            and emotions.</p> 
+                    </div>
+                    <div class="col-md">
+                        <img class="profile-img" src="assets/img/Iqra Naz-min.webp">
+                        <p>My greatest strength is that I try to deliver the most 
+                            ethical care I can to my clients, this includes regular supervision and 
+                            staying informed about new developments in the field. The therapeutic 
+                            alliance I build with my clients allows them to take ownership of thier 
+                            struggles as much as their joy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="services">
+                <h3 class="h3-title">THERAPY AT YOUR</h3> 
+                <h2 class="h2-title">CONVENIENCE</h2>
+                <p>I like to tailor my treatment plan according to what my client needs instead 
+                    of trying to fit them into a pre-existing structure/ protocol as I believe 
+                    in making therapy accessible and encouraging people to seek help for their 
+                    mental health issues. I am a strong advocate for the power of psychotherapy 
+                    as I believe in healing psychologically and emotionally being just as 
+                    important as physical healing. As a therapist, my responsibility lies with 
+                    facilitating the transformation or recovery my clients seek for themselves, 
+                    but it is important to know that the key to that transformation lies with 
+                    the client themselves.</p>
+                <div class="row">
+                    <div class="col-md">
+                        <h4>ONLINE THERAPY</h4>
+                    </div>  
+                    <div class="col-md">
+                        <h4>INPERSON THERAPY</h4>
+                    </div>
+                </div>
+                <form action="tel:+92301-8637274" class="flex-row center">
+                        <button type="submit">Get 15 minutes of free consulation</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div id="blogs">
+                <h3 class="h3-title">READ RECENT</h3>
+                <h2 class="h2-title">BLOGS</h2>
+                <div class="row center">
+                    {%- for post in collections.post | reverse -%}
+                        <div class="article-snippet">
+                            <div class="col">
+                                <img class="snippet-article-cover-img" src="{{ post.data.coverImage }}" alt="{{ post.data.coverImageAlt }}">
+                                <article class="snippet">
+                                <h3 class="snippet-article-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                                <p class="snippet-article-date">{{ post.date | postDate }}</p>
+                                <p class="snippet-article-body">{{ post.data.description }}</p>
+                                <form action="{{ post.url }}">
+                                    <button type="submit">Continue Reading</button>
+                                </form>
+                            </div>
+                        </div>
+                    {%- endfor %}
+                </div>    
+                <form action="/blog/">
+                    <button type="submit">Read My Blog</button>
+                </form>
+            </div>
+        </section>
+
+<!--         <section>
+            <div id="testimonials" class="">
+                <h2>CLIENT TESTIMONIALS</h2>
+                <div class="flex-row center">
+                    <svg id="previous-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" xmlns:v="https://vecta.io/nano">
+                        <ellipse id="previous-arrow-ellipse" cx="12.407" cy="12.04" rx="9.937" ry="9.689" fill="#a1a884"/><path d="M13.293 6.293L7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" fill="#fff"/>
+                    </svg>
+                    <div>
+                        <div id="testimonial-1" class="flex-col center testimonial active">
+                            <h4>ISHAL AMRAN</h4>
+                            <img class="client-img" src="assets/img/Ishal Amran.webp">
+                            <p>I highly recommend Iqra as a good therapist. I know myself better than ever 
+                                before. I started therapy with the goal to understand myself better and 
+                                with Iqra I learned so many things about myself as well as the world in 
+                                general. I feel more confident expressing myself and showing different 
+                                sides of me to different people accordingly. Therapy with her will always 
+                                be my safe place. I cannot thank her enough for always believing in me and 
+                                showing me the light at the end of every dark tunnel.</p>
+                        </div>
+                        <div id="testimonial-2" class="flex-col center testimonial">
+                            <h4>IMAN KHALID</h4>
+                            <img class="client-img" src="assets/img/Iman Khalid.webp">
+                            <p>I have been diagnosed with MDD for over 2 years now and I've been struggling 
+                                with it a lot. Honestly I had lost complete hope when I met Iqra Naz. I 
+                                still remember the first session where I was hopeless and sullen. Luckily 
+                                she helped me realise that hope existed and that began my journey of 
+                                exploring my mental health. Therapy helped me control my anger issues and 
+                                prevent me from attempting suicide. Luckily after a long and amazing 
+                                journey I've been able to conquer my fears and worries and I am now feeling 
+                                very happy. This was all thanks to my therapist who helped me find answers 
+                                to the countless questions I had. I am happy to have gone through therapy 
+                                which was skeptical thought at first. But now I'd never choose differently.</p>
+                        </div>
+                    </div>
+                    <svg id="next-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#f4f4f4" xmlns:v="https://vecta.io/nano">
+                        <ellipse id="next-arrow-ellipse"cx="12.021" cy="11.964" rx="9.937" ry="9.689" fill="#a1a884"/><path d="M9.303 7.64l4.293 4.293-4.293 4.293 1.414 1.414 5.707-5.707-5.707-5.707z" fill="#fff"/>
+                    </svg>
+                </div>
+            </div>
+        </section> -->
+
+        <section>
+            <div id="faqs" class="row">
+                <h3 class="h3-title">FREQUENTLY ASKED</h3>
+                <h2 class="h2-title">QUESTIONS</h2>
+                <div class="col-md">
+                    <p class="faqs-questions">Q. How do I know if counseling is for me?</p>
+                    <p class="faqs-answers">A. Counseling is not exclusive to anyone although, the process may vary with each individual. It is for anyone facing a short term or a long-standing difficulty emotionally or psychologically and is willing to process/ develop skills to regulate their emotional state. Taking a session could help with analyzing if one feels the need for it.</p>
+                    
+                    <p class="faqs-questions">Q. How long is the session?</p>
+                    <p class="faqs-answers">A. A session is usually 50-55 minutes long, though the in-take session can sometimes be longer.</p>
+                    
+                    <p class="faqs-questions">Q. What are the things I need to be clear about before reaching out to a therapist?</p>
+                    <p class="faqs-answers">A. There are a couple of things you should have clarity over before you reach out to a therapist. Firstly, you need to be clear about your motivation and willingness to commit to the process considering it will take time. Secondly, what is it that I want to achieve from therapy? Apart from that, are you willing to continue long enough to see results?</p>
+                    
+                    <p class="faqs-questions">Q. How do I know if a particular therapist is right for me?</p>
+                    <p class="faqs-answers">A. I suggest talking to your therapist before you sign up, it gives some clarity on whether you can work with them. Someone can be a great therapist and still not be fit for you.</p>
+                    
+                    <p class="faqs-questions">Q. What are your qualifications?</p>
+                    <p class="faqs-answers">A. I've completed MS Clinical and Counseling Psychology from Beaconhouse National University Lahore and have been practicing for over two years.</p>
+
+                    <p class="faqs-questions">Q. How much does a session cost?</p>
+                    <p class="faqs-answers">A. I take Rs. 3000/- per session.</p>
+                </div>
+                <div class="col-md">
+                    <p class="faqs-questions">Q. How many session does one need?</p>
+                    <p class="faqs-answers">A. Usually, 8-12 sessions are required but it depends on the problem one is facing and the need for assistance. Usually, a session weekly is scheduled initially and then as progress takes place we can move towards spacing them out.</p>
+
+                    <p class="faqs-questions">Q. What is your professional qualification?</p>
+                    <p class="faqs-answers">A. I have done my Masters in Clinical and Counseling Psychology.</p>
+
+                    <p class="faqs-questions">Q. How do I book a session?</p>
+                    <p class="faqs-answers">A. You can call me, email me or reach out to me through my Instagram account provided in the contact details on the website. I offer a 15-minute free consultation over a call to discuss what you want to seek therapy for, if I am fit for it and when can we book an appointment.</p>
+                    
+                    <p class="faqs-questions">Q. What happens in the in-take session?</p>
+                    <p class="faqs-answers">A. In the intake session I normally try to assess the complaints my clients bring to therapy and screen for the factors that might be playing a major role in maintaining the problem one is facing. It is usually a thorough conversation about the difficulties one is facing and a general assessment.</p>
+
+                    <p class="faqs-questions">Q. Does taking therapy mean I get diagnosed with a mental disorder?</p>
+                    <p class="faqs-answers">A. Not necessarily, as I have mentioned before therapy is for anyone and everyone and while diagnosis holds therapeutic importance and helps with designing the treatment protocol, I prefer to not focus entirely on it unless my clients need me to. As a mental health professional, I also aspire to reduce stigma around seeking help for one's mental health and unfortunately sometimes diagnosis can be counter-productive.</p>
+                </div>
+                <form action="#contact-form">
+                    <button type="submit">Ask a question</button>
+                </form>
+            </div>
+        </section>
+			
+        
+        

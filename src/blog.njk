@@ -1,0 +1,32 @@
+---
+
+title: Iqra Naz's mental health counseling blog
+layout: 'base.njk'
+description: Iqra Naz's mental health counseling blog.
+
+---
+
+<section class="blogpage-header">
+
+</section>
+
+
+<section id="blogpage-articles">
+    {%- for post in collections.post | reverse -%}
+        <div class="row">
+            <div class="col-sm">
+                <img class="blogpage-article-cover-img" src="{{ post.data.coverImage }}" alt="{{ post.data.coverImageAlt }}">
+            </div>
+            <div class="col-sm">
+                <article class="blogpage-blog">
+                    <h3 class="blogpage-article-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                    <p class="blogpage-article-date">{{ post.date | postDate }}</p>
+                    <p class="blogpage-article-body">{{ post.data.description }}</p>
+                    <form action="{{ post.url }}">
+                        <button type="submit">Continue Reading</button>
+                    </form>
+                </article>
+            </div>
+        </div>    
+    {%- endfor %}
+</section> 

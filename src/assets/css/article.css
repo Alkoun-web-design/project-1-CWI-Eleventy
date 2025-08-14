@@ -1,0 +1,277 @@
+.blogpage-header {
+    height: 10em;
+    width: 100%;
+    background: var(--ntcd)
+  }
+  
+  #blogpage-articles .row {
+    margin: 10em;
+  }
+  
+  .blogpage-article-cover-img {
+    height: 22em;
+    object-fit: cover;
+  }
+  
+  .blogpage-article-title a {
+    font-size: 1em;
+    line-height: 0.5em;
+    color: var(--ntcd);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .blogpage-article-title a:hover {
+    text-decoration: underline;
+    color: var(--nsc);
+  }
+  
+  /* .blogpage-author-img {
+    border: 1px solid var(--ntcl);
+    border-radius: 50%;
+    height: 7em;
+    object-fit: cover;
+  }
+  
+  .blogpage-article-author {
+    color: rgb(17, 17, 17);
+  } */
+  
+  .blogpage-article-date {
+    color: rgb(95, 95, 95);
+  }
+  
+  .main-article:nth-child(2) {
+    margin: 20em;
+  }
+  
+  .main-article-cover {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .main-article-cover-img {
+    height: 40em;
+    width: 100vw; 
+    display: absolute;
+    z-index: -1;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    background: linear-gradient(180deg, rgba(22,22,22,0.7889355571330094) 8%, rgba(9,9,121,0) 100%); 
+    height:100%;
+    width: 100%;
+  }
+  
+  .main-article-title {
+    position: absolute;
+    z-index: 1;
+    top: 9em;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center; 
+    color: var(--npc);
+  }
+  
+  .main-author-img {
+    border: 1px solid var(--ntcl);
+    border-radius: 50%;
+    height: 10em;
+    object-fit: cover;
+  }
+  
+  .main-article-author {
+    color: rgb(17, 17, 17);
+  }
+  
+  .main-article-date {
+    color: rgb(95, 95, 95);
+  }
+  
+  .main-article-body {
+    font-size: 1em;
+    margin: 10em;
+    line-height: 4em;
+  }
+
+
+
+@media (max-width: 576px) {
+
+    p {margin: 1rem;}
+  
+    h1, h2, h3, h4, h5 {
+      font-weight: 500;
+      margin: 0.4em 0;
+      line-height: 1em;
+      text-align: center;
+    }
+  
+    h1 {font-size: 1.802rem;}
+  
+    h2 {font-size: 1.602rem;}
+  
+    h3 {font-size: 1.424rem;}
+  
+    h4 {font-size: 1.266rem;}
+  
+    h5 {font-size: 1.125rem;}
+  
+    small, .text_small {font-size: 0.889rem;}
+  
+  }
+  
+  @media (min-width: 576px) {
+  
+    p {margin-bottom: 1rem;}
+  
+    h1, h2, h3, h4, h5 {
+      font-weight: 500;
+      margin: 0.4em 0;
+      line-height: 1em;
+    }
+  
+    h1 {font-size: 1.802rem;}
+  
+    h2 {font-size: 1.602rem;}
+  
+    h3 {font-size: 1.424rem;}
+  
+    h4 {font-size: 1.266rem;}
+  
+    h5 {font-size: 1.125rem;}
+  
+    small, .text_small {font-size: 0.889rem;}
+  
+    /*.flex-col {
+      display: block;
+    }
+  
+    .flex-row {
+      display: block;
+    }*/
+  
+  }
+  
+  @media (min-width: 768px) {
+  
+    p {margin-bottom: 1rem;}
+  
+    h1, h2, h3, h4, h5 {
+      font-weight: 500;
+      margin: 0.4em 0;
+      line-height: 1em;
+    }
+  
+    h1 {font-size: 2.488rem;}
+  
+    h2 {font-size: 2.074rem;}
+  
+    h3 {font-size: 1.728rem;}
+  
+    h4 {font-size: 1.44rem;}
+  
+    h5 {font-size: 1.2rem;}
+  
+    small, .text_small {font-size: 0.833rem;}
+  
+    .service-col{
+      display: block;
+      height: 30em;
+      width: 40em;  
+    }
+  
+    #about, #services, #blogs, #testimonials, #faqs {
+      padding: 5em 12vw;
+    }
+  
+    #hero-section, footer {
+      padding: 1em 12vw;
+    }
+  
+    .contact-menu {
+      height: 20em;
+      width: 3em;
+      position: fixed;
+      top: 25%;
+      right: 1em;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .faqs-answers {
+      display: block;
+    }
+  
+    .main-article-title {
+      top: 6em
+    }
+  
+  }
+  
+  @media (min-width: 992px) {
+  
+    p {margin:1rem 2rem;}
+  
+    h1, h2, h3, h4, h5 {
+      font-weight: 500;
+      margin: 0.4em 0;
+      line-height: 1em;
+    }
+  
+    h1 {font-size: 3.052rem;}
+  
+    h2 {font-size: 2.441rem;}
+  
+    h3 {font-size: 1.953rem;}
+  
+    h4 {font-size: 1.563rem;}
+  
+    h5 {font-size: 1.25rem;}
+  
+    small, .text_small {font-size: 0.8rem;}
+  
+    .nav-menu-icon {
+      display: none;
+    }
+  
+    #dropdown-nav {
+      display: none;
+    }
+  
+    #main-nav a {
+      display: flex;
+    }
+  
+  
+  
+  }
+  
+  @media (min-width: 1200px) {
+  
+    p {margin-bottom: 1rem;}
+  
+    h1, h2, h3, h4, h5 {
+      font-weight: 500;
+      margin: 0.4em 0;
+      line-height: 1em;
+    }
+  
+    h1 {font-size: 4.209rem;}
+  
+    h2 {font-size: 3.157rem;}
+  
+    h3 {font-size: 2.369rem;}
+  
+    h4 {font-size: 1.777rem;}
+  
+    h5 {font-size: 1.333rem;}
+  
+    small, .text_small {font-size: 0.75rem;}
+  
+  }

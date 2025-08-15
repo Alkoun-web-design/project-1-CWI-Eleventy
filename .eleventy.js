@@ -13,7 +13,7 @@ export default async function(eleventyConfig) {
 	htmlTemplateEngine: 'njk',
 	dir: {
 		input: 'src',
-        output: "public",
+        output: "_site",
         includes: "_includes" 
 	},
 };

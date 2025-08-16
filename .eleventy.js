@@ -14,7 +14,6 @@ export default async function(eleventyConfig) {
 	dir: {
 		input: 'src',
         output: "_site",
-        includes: "_includes" 
 	},
 };
     return {

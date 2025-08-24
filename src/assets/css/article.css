@@ -49,14 +49,13 @@
     height: 40em;
     width: 100vw;
     margin: 0;
-    /* background-color: rgba(0, 0, 0, 0.311); */
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.311);
   }
   
   .main-article-cover-img {
     height: 40em;
     width: 100vw; 
-    display: absolute;
+    position: relative;
     z-index: -1;
     object-fit: cover;
   }
@@ -68,11 +67,13 @@
   }
   
   .main-article-title {
-    position: absolute;
-    z-index: 1;
-    top: 9em;
+    /* position: absolute;
+    z-index: 1; */
+    /* top: 9em;
     left: 0; 
-    right: 0; 
+    right: 0;  */
+    padding: 1em 2em;
+    background: rgba(0, 0, 0, 0.605);
     margin-left: auto; 
     margin-right: auto;
     text-align: center; 
